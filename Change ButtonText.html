@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First JavaScript</h1>
+
+<button id="b1" type="button"
+onclick="buttonClick()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+<script>
+function buttonClick(){
+if (document.getElementById('b1').innerText === 'Click me to display Date and Time.'){
+document.getElementById('demo').innerHTML = Date();
+document.getElementById('b1').innerHTML = 'Click me to hide Date and Time.';
+}
+else
+{
+document.getElementById('demo').innerHTML = '';
+document.getElementById('b1').innerHTML = 'Click me to display Date and Time.';
+}
+}
+</script>
+</body>
+</html> 
